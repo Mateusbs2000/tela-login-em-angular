@@ -1,0 +1,25 @@
+<section>
+  <div class="container email-usuario ff-inter">
+    <form>
+        <input
+        type="text"
+        class="input"
+        name="email"
+        placeholder="exemplo@exemplo.com"
+        [(ngModel)]="email">
+
+        <input type="text"
+        class="input"
+        name="password"
+        placeholder="password">
+        <br>
+
+        <button (click)="enviarEmail()">Enviar</button>
+    </form>
+  </div>
+
+  <div class="links">
+    <p>Novo no TabNews? <a [routerLink]="['/cadastro']">Crie uma conta aqui.</a></p>
+    <p>Esqueceu sua senha? <a href="#">Clique aqui.</a></p>
+  </div>
+</section>

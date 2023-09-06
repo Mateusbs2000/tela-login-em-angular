@@ -1,21 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NotificationComponent } from './notification/notification.component';
-import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component';
+import { LoginComponent } from './componentes/login/login.component';
+import { FormsModule } from '@angular/forms';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { CadastroComponent } from './componentes/register/cadastro/cadastro.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NotificationComponent,
-    CabecalhoComponent
+    LoginComponent,
+    CadastroComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
